@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    
+    <title>Filtro Virgulti!</title>
+  </head>
+  <body>
+    <h1>Filtro Virgulti</h1>
+    <form id="filter-form" action="#">
+      <h3>Inserisci il filtro voluto:</h3>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="filter-text" name="filter-text" value="">
+        <label class="mdl-textfield__label" for="filter-text">filtro</label>
+      </div>
+      <p>NB: I parametri sono a,b,c. Ogni paramaetro deve essere scritto nella forma "w.*"</p>
+      <p>es. w.a == "a" && w.b == 7</p>
+      <input type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Submit">
+    </form> 
+
+    
+    <span id="error-log"></span>
+    <br>
+    <hr>
+    
+
+    <div id="error"></div>
+    <div >
+      <table align="center" id="messages" class="mdl-data-table mdl-js-data-table ">
+        <thead>
+          <th>A</th>
+          <th>B</th>
+          <th>C</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+
+    <script src='js/renderer.js' ></script>
+    <script src='js/material.min.js' ></script>
+  </body>
+</html>
